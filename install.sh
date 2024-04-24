@@ -99,22 +99,22 @@ EOF
 
 rm .asoundrc
 
-echo "-------------------------------------------"
-echo "######>>> setting hostname"
-echo "-------------------------------------------"
+#echo "-------------------------------------------"
+#echo "######>>> setting hostname"
+#echo "-------------------------------------------"
 
-cat <<EOF > /etc/hostname
-randy
-EOF
+#cat <<EOF > /etc/hostname
+#randy
+#EOF
 
-cat <<EOF > /etc/hosts
-127.0.0.1       randy
-::1             localhost ip6-localhost ip6-loopback
-ff02::1         ip6-allnodes
-ff02::2         ip6-allrouters
+#cat <<EOF > /etc/hosts
+#127.0.0.1       randy
+#::1             localhost ip6-localhost ip6-loopback
+#ff02::1         ip6-allnodes
+#ff02::2         ip6-allrouters
 
-127.0.1.1       randy
-EOF
+#127.0.1.1       randy
+#EOF
 
 echo "-------------------------------------------"
 echo "######>>> setting automount usb drives"
