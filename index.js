@@ -466,6 +466,11 @@ function poweroff(){
     cp.spawnSync('poweroff');
 }
 
+// reboots linux (rpi) //
+function restart(){
+    cp.spawnSync('reboot');
+}
+
 // kills any mpv processes (linux/mac) //
 function killmpv(){
     cp.spawnSync('killall',['mpv']);

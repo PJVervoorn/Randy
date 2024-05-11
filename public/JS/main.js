@@ -696,6 +696,10 @@ function poweroff(){
     api.powerOff();
 }
 
+function restart(){
+    api.restart();
+}
+
 function showToast(txt,isconsistant){
     console.log("showtoast " + txt);
     clearTimeout(toasttimeout);

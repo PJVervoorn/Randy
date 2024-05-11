@@ -39,6 +39,9 @@ var api = {
     },
     powerOff: function (){
         return callAPI("powerOff",{});
+    },
+    restart: function (){
+        return callAPI("restart",{});
     }
 }
 
