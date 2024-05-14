@@ -70,9 +70,9 @@ echo "-------------------------------------------"
 echo "######>>> Download the latest release of Randy"
 echo "-------------------------------------------"
 
-LOCATION=$(curl -s https://api.github.com/repos/papasimons/Randy/releases/latest \
+LOCATION=$(curl -s https://api.github.com/repos/pjvervoorn/Randy/releases/latest \
 | grep "tag_name" \
-| awk '{print "https://github.com/papasimons/Randy/archive/" substr($2, 2, length($2)-3) ".tar.gz"}') \
+| awk '{print "https://github.com/pjvervoorn/Randy/archive/" substr($2, 2, length($2)-3) ".tar.gz"}') \
 ; curl -L -o randy_release.tar.gz $LOCATION
 
 mkdir Randy
