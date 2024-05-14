@@ -51,6 +51,15 @@ app.post('/powerOff', function (req, res) {
     res.json({"success":200});
 });
 
+app.post('/restart', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "http://localhost");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    //return
+    console.log("Rebooting - see you soon!");
+    restart();
+    res.json({"success":200});
+});
+
 app.post('/getStickyList', function (req, res) {
     res.header("Access-Control-Allow-Origin", "http://localhost");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
